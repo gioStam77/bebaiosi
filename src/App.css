@@ -55,8 +55,5 @@
   align-self: flex-start;
   padding: 1rem;
 }
-@media print {
-  @page {
-    size: landscape;
-  }
+
 }
