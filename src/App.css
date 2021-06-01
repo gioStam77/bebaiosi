@@ -5,9 +5,6 @@
 .container {
   display: flex;
   justify-content: space-evenly;
-  @page {
-    size: landscape;
-  }
 }
 .bebaiosi {
   display: flex;
@@ -57,4 +54,9 @@
 .apodeixi .logo {
   align-self: flex-start;
   padding: 1rem;
+}
+@media print {
+  @page {
+    size: landscape;
+  }
 }
