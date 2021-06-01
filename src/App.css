@@ -2,37 +2,56 @@
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.container {
+  display: flex;
+  justify-content: space-evenly;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.bebaiosi {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  box-sizing: border-box;
+  border: 1px solid black;
+  width: 600px;
+  margin: 0.5rem 1.5rem;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+.bebaiosi h2 {
+  text-decoration: underline;
+}
+.bebaiosi h3 {
+  align-self: flex-end;
+  padding: 1rem;
 }
 
-.App-link {
-  color: #61dafb;
+.bebaiosi p {
+  padding: 2rem;
+  line-height: 1.75rem;
+  text-align: justify;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.apodeixi {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  box-sizing: border-box;
+  border: 1px solid black;
+  width: 600px;
+  margin: 0.5rem 1.5rem;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-se;
+}
+.apodeixi h2 {
+  text-decoration: underline;
+}
+.apodeixi p {
+  padding: 1rem;
+  line-height: 1.75rem;
+  text-align: justify;
+}
+.telos {
+  font-size: 0.65rem;
+}
+.apodeixi .logo {
+  align-self: flex-start;
+  padding: 1rem;
 }
