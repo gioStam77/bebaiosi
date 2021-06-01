@@ -5,6 +5,9 @@
 .container {
   display: flex;
   justify-content: space-evenly;
+  @page {
+    size: landscape;
+  }
 }
 .bebaiosi {
   display: flex;
