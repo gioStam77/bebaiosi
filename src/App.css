@@ -5,6 +5,14 @@
 .container {
   display: flex;
   justify-content: space-evenly;
+  margin: 5px;
+}
+.btn {
+  background-color: aqua;
+  width: 150px;
+  position: absolute;
+  left: 44%;
+  top: 40px;
 }
 .bebaiosi {
   display: flex;

@@ -22,7 +22,9 @@ function App() {
       <div>
         <Bebaiosi onAddData={addDataHandler} />
       </div>
-      <button onClick={handlePrint}>print</button>
+      <button className="btn" onClick={handlePrint}>
+        print
+      </button>
       <div className="container" ref={componentRef}>
         <div className="bebaiosi">
           <h3>ΑΔΑ¨ΒΕΑ10Ξ7Μ-8Φ6</h3>

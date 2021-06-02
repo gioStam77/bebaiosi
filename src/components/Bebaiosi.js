@@ -53,20 +53,20 @@ function Bebaiosi(props) {
             type="text"
             name="name"
             ref={nameRef}
-            placeholder="onoma optikou"
+            placeholder="όνομα οπτικού"
           />
           <input type="text" name="day" ref={dayRef} placeholder="ημερομηνία" />
           <input
             type="text"
             name="doctor"
             ref={doctorRef}
-            placeholder="ιατρος"
+            placeholder="ιατρός"
           />
           <input
             type="text"
             name="asfalismenos"
             ref={asfalismenosRef}
-            placeholder="onomateponimo "
+            placeholder="ασφαλισμένος "
           />
           <input
             type="text"
@@ -84,10 +84,14 @@ function Bebaiosi(props) {
             type="number"
             name="a.apodixis"
             ref={apodixiRef}
-            placeholder="Aρ. Αποδειξης "
+            placeholder="Aρ. Απόδειξης "
           />
           <input type="number" name="poso" ref={posoRef} placeholder="ποσό " />
-          <input type="submit" value="Save" />
+          <input
+            style={{ width: "80px", margin: "5px" }}
+            type="submit"
+            value="Save"
+          />
         </form>
       </div>
     </>
