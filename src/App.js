@@ -15,8 +15,6 @@ function App() {
     setDataLoaded(data);
   }
 
-  console.log(dataloaded.optikos);
-
   return (
     <>
       <div>
@@ -53,29 +51,29 @@ function App() {
             €(......................................................................
             ) για την αγορά:
             <br />
-            <ul>
-              {dataloaded.selected === "1" && (
-                <li>
-                  Γυαλιά οράσεως μακρινά με σκελετό{" "}
-                  {parseInt(dataloaded.poso) / 2}€ και φακούς
-                  {parseInt(dataloaded.poso) / 2}€
-                </li>
-              )}
-              {dataloaded.selected === "2" && (
-                <li>
-                  Γυαλιά οράσεως κοντινά με σκελετό{" "}
-                  {parseInt(dataloaded.poso) / 2}€ και φακούς
-                  {parseInt(dataloaded.poso) / 2}€
-                </li>
-              )}
-              {dataloaded.selected === "3" && (
-                <li>Φακούς επαφής {dataloaded.poso}€</li>
-              )}
-              )
-            </ul>
-            Αριθμός Αποδειξης:
-            {dataloaded.apodeixi}{" "}
           </p>
+          <ul>
+            {dataloaded.selected === "1" && (
+              <li>
+                Γυαλιά οράσεως μακρινά με σκελετό{" "}
+                {parseInt(dataloaded.poso) / 2}€ και φακούς
+                {parseInt(dataloaded.poso) / 2}€
+              </li>
+            )}
+            {dataloaded.selected === "2" && (
+              <li>
+                Γυαλιά οράσεως κοντινά με σκελετό{" "}
+                {parseInt(dataloaded.poso) / 2}€ και φακούς
+                {parseInt(dataloaded.poso) / 2}€
+              </li>
+            )}
+            {dataloaded.selected === "3" && (
+              <li>Φακούς επαφής {dataloaded.poso}€</li>
+            )}
+            )
+          </ul>
+          Αριθμός Αποδειξης:
+          {dataloaded.apodeixi}{" "}
           <div>
             <h3>Yπογραφή</h3>
             <img src="/sfragida.png" alt="σφαραγίδα" width="200" />

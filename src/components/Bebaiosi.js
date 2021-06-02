@@ -1,7 +1,7 @@
 import React, { useRef, useState } from "react";
 
 function Bebaiosi(props) {
-  const [data, setdata] = useState([]);
+  // const [data, setdata] = useState([]);
 
   const nameRef = useRef();
   const dayRef = useRef();
@@ -37,7 +37,7 @@ function Bebaiosi(props) {
       tameio: enteredTameio,
       selected: clickedSelectedRef,
     };
-    setdata(data);
+    // setdata(data);
     props.onAddData(data);
     // window.print();
 
