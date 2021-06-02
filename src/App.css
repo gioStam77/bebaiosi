@@ -10,9 +10,8 @@
 .btn {
   background-color: aqua;
   width: 150px;
-  position: absolute;
+  position: relative;
   left: 44%;
-  top: 40px;
 }
 .bebaiosi {
   display: flex;
