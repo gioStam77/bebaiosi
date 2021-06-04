@@ -50,6 +50,9 @@
 .apodeixi h2 {
   text-decoration: underline;
 }
+.apodeixi h4 {
+  margin-top: 10px;
+}
 .apodeixi p {
   padding: 1rem;
   line-height: 1.75rem;

@@ -55,7 +55,12 @@ function Bebaiosi(props) {
             ref={nameRef}
             placeholder="όνομα οπτικού"
           />
-          <input type="text" name="day" ref={dayRef} placeholder="ημερομηνία" />
+          <input
+            type="text"
+            name="day"
+            ref={dayRef}
+            placeholder="ημερομηνία-γνωμάτευσης"
+          />
           <input
             type="text"
             name="doctor"

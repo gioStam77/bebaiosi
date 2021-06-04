@@ -5,6 +5,7 @@ import { useReactToPrint } from "react-to-print";
 
 function App() {
   const [dataloaded, setDataLoaded] = useState([]);
+  const [today, setDate] = useState(new Date());
 
   const componentRef = useRef();
   const handlePrint = useReactToPrint({
@@ -14,6 +15,11 @@ function App() {
   function addDataHandler(data) {
     setDataLoaded(data);
   }
+  const locale = "gr";
+  const day = today.toLocaleDateString(locale, { weekday: "long" });
+  const date = `${day}, ${today.getDate()} ${today.toLocaleDateString(locale, {
+    month: "long",
+  })},${today.getFullYear()}\n\n\n`;
 
   return (
     <>
@@ -44,7 +50,8 @@ function App() {
         <div className="apodeixi">
           <img className="logo" src="/ocellus_logo.png" width="140"></img>
           <h2>ΑΠΟΔΕΙΞΗ ΕΙΣΠΡΑΞΗΣ</h2>
-          <h4>ΗΜΕΡΟΜΗΝΙΑ {dataloaded.day}</h4>
+          <h4>ΗΜΕΡΟΜΗΝΙΑ</h4>
+          <h4>{date}</h4>
           <p>
             Ο/Η {dataloaded.asfalismenos} ασφαλισμένος του {dataloaded.tameio}
             κατέβαλε το ποσό των {dataloaded.poso}{" "}
