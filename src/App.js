@@ -5,7 +5,6 @@ import { useReactToPrint } from "react-to-print";
 
 function App() {
   const [dataloaded, setDataLoaded] = useState([]);
-  const [today, setDate] = useState(new Date());
 
   const componentRef = useRef();
   const handlePrint = useReactToPrint({
@@ -15,6 +14,7 @@ function App() {
   function addDataHandler(data) {
     setDataLoaded(data);
   }
+  const today = new Date();
   const locale = "gr";
   const day = today.toLocaleDateString(locale, { weekday: "long" });
   const date = `${day}, ${today.getDate()} ${today.toLocaleDateString(locale, {
